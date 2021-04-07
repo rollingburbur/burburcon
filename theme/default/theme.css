@@ -1,8 +1,6 @@
 ﻿/* 폰트 로드 */
 @import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Roboto&display=swap');
 
 /* 위치 기본 설정 */
 html
@@ -72,49 +70,45 @@ img.dccon					{	max-height:100px; }
 
 
 /* 폰트 설정 */
-html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
-										font-size:25px; color: white;
-										/*text-shadow:
-						1px 2px 5px black ;
-						 
-						 -1px -1px 1px red, -1px   0 1px black,
-						-1px  1px 1px blue,    0 1px 1px black,
- 						 1px  1px 1px yellow,  1px   0 1px black,
-						 1px -1px 1px black,   0 -1px 1px black;
-    /*
-						 -1px -1px 3px grey, -1px   0 3px grey,
-						 -1px  1px 3px grey,    0 1px 3px grey,
-						  1px  1px 3px grey,  1px   0 3px grey,
-						  1px -1px 3px grey,   0 -1px 3px grey;
-						  background-color: rgb(0,0,0,0.3);*/}
-.chat_nickname_box	{	font-size:0.9em; }
+html								{	font-family:'Noto Sans KR', serif;
+										font-size:20px; color: white;
+										font-weight:800;}
+.chat_nickname_box	{	font-size:1em; }
 
 
 .chat_outer_box			{
 							position:relative; 
 							z-index:0; 
 							overflow:hidden;
-							margin :15px; /*border:1px solid grey;*/ 
-							padding:8px;  
-							background-color: rgb(0,0,0,0.3); 
-							animation: fadeout 3s;}
+							/*margin :px; border:1px solid grey;*/ 
+							padding:2px;  
+							display: flex;
+							flex-wrap:wrap;
+							}
 .chat_inner_box,	/* SOON DEPRECATED */
-.chat_upper_box			{	margin-bottom:3px; }
+.chat_upper_box			{	margin-bottom:3px; 
+							}
 											
 .chat_nickname_box,
-.chat_badge_box 		{	display:inline-block; }
-.chat_badge_box			{ float:right; }
+.chat_badge_box 		{	display:inline-block; 
+							float:right;}
+.chat_badge_box			{ float:left; }
 .chat_outer_box .chat_msg_box,
 .chat_lower_box			{ clear:right; }
 
 .chat_msg_box			{ white-space:pre-line;
 						  word-break:break-word;
-						  max-height:200px; 
-						  padding:0 0 5px 0;
-						text-shadow:1px 2px 5px black; }
+						  max-height:100px; 
+						  padding:0 0 0 15px;
+						  text-shadow: -0.5px 0 #000,
+										0 0.5px #000,
+										0.5px 0 #000,
+										0 -0.5px #000;
+
+}
 .chat_msg_box.image_only	{	text-align:center; }
 
-
+#chat_wrapper	{ -webkit-mask-image: linear-gradient(0deg, black, transparent);}
 
 /* 클립이 포함된 채팅 메세지에 대한 설정 */
 /* 크롬 등 보안설정된 브라우저에선 디버그가 불가능하므로 유의 */
