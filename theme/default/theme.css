@@ -91,8 +91,11 @@ html								{	font-family:'Noto Sans KR', serif;
 											
 .chat_nickname_box,
 .chat_badge_box 		{	display:inline-block; 
-							float:right;}
-.chat_badge_box			{ float:left; }
+							float:right;
+							text-shadow: 2px 2px 2px gray;
+							}
+.chat_badge_box			{ float:left;
+							margin-top:3px;}
 .chat_outer_box .chat_msg_box,
 .chat_lower_box			{ clear:right; }
 
@@ -100,10 +103,7 @@ html								{	font-family:'Noto Sans KR', serif;
 						  word-break:break-word;
 						  max-height:100px; 
 						  padding:0 0 0 15px;
-						  text-shadow: -0.5px 0 #000,
-										0 0.5px #000,
-										0.5px 0 #000,
-										0 -0.5px #000;
+						  text-shadow: 2px 2px 2px black;
 
 }
 .chat_msg_box.image_only	{	text-align:center; }
